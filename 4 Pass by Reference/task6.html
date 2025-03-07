@@ -1,0 +1,31 @@
+<!-- Create an array, pass it to a function that removes an element, and print the result. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array (task 36)</title>
+</head>
+
+<body>
+    <h2>Create an array, pass it to a function that removes an element, and print the result.</h2>
+    <script>
+        let numbers = [1, 2, 3, 4, 5];
+        console.log("Original array:", numbers);
+
+        function removeElement(array, index) {
+        
+            if (index >= 0 && index < array.length) {
+                array.splice(index, 1);
+            }
+            return array;
+        }
+        let result = removeElement(numbers, 2);
+        console.log("Result:", result);
+
+    </script>
+</body>
+
+</html>

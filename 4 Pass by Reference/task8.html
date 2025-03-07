@@ -1,0 +1,32 @@
+<!-- Use pop() on an array inside a function and see if the original array changes. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array (task 38)</title>
+</head>
+
+<body>
+    <h2>Use pop() on an array inside a function and see if the original array changes.</h2>
+    <script>
+        let numbers = [1, 2, 3, 4, 5];
+
+        console.log("Original array:", numbers);
+
+        function modifyArray(array) {
+            console.log("Inside function:");
+            console.log("Before pop():", array);
+            array.pop();
+            console.log("After pop():", array);
+        }
+
+        modifyArray(numbers);
+        console.log("Original array after function call:", numbers);
+
+    </script>
+</body>
+
+</html>

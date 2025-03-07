@@ -1,0 +1,32 @@
+<!-- Pass an array to a function that changes its length and check the effect. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array (task 39)</title>
+</head>
+
+<body>
+    <h2>Pass an array to a function that changes its length and check the effect.</h2>
+    <script>
+
+        let numbers = [1, 2, 3, 4, 5];
+        console.log("Original array:", numbers);
+
+        function changeLength(array) {
+            console.log("Inside function:");
+            console.log("Before changing length:", array);
+            array.length = 3;
+            console.log("After changing length:", array);
+        }
+
+        changeLength(numbers);
+        console.log("Original array after function call:", numbers);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!-- Store an array in two different variables, modify one using push(), and print both. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array (task 37)</title>
+</head>
+
+<body>
+    <h2>Store an array in two different variables, modify one using push(), and print both.</h2>
+    <script>
+        let originalArray = [1, 2, 3, 4, 5];
+
+        let array1 = originalArray;
+        let array2 = originalArray;
+
+        console.log("Before modification:");
+        console.log("Array 1:", array1);
+        console.log("Array 2:", array2);
+
+        array1.push(6);
+
+        console.log("After modification:");
+        console.log("Array 1:", array1);
+        console.log("Array 2:", array2);
+
+    </script>
+</body>
+
+</html>

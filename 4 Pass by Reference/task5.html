@@ -1,0 +1,30 @@
+<!-- Check if two variables referencing the same array are equal after modifying one. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array (task 35)</title>
+</head>
+
+<body>
+    <h2>Check if two variables referencing the same array are equal after modifying one.</h2>
+    <script>
+        let fruits = ["Apple", "Banana", "Cherry"];
+
+        let copiedArray = fruits;
+
+        console.log("Before modification:");
+        console.log("Are arrays equal?", fruits === copiedArray);
+
+        copiedArray[0] = "Date";
+
+        console.log("After modification:");
+        console.log("Are arrays equal?", fruits === copiedArray);
+
+    </script>
+</body>
+
+</html>

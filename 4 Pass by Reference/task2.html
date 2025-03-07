@@ -1,0 +1,32 @@
+<!-- Create a function that adds an element to an array and check if the original array
+changes. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array (task 32)</title>
+</head>
+
+<body>
+    <h2>Create a function that adds an element to an array and check if the original array
+        changes.</h2>
+    <script>
+        let originalArray = [1, 2, 3, 4, 5];
+        console.log("Original array:", originalArray);
+
+        function addElement(array, element) {
+            let newArray = [array];
+            newArray.push(element);
+            return newArray;
+        }
+        let newArray = addElement(originalArray, 6);
+        console.log("Original array:", originalArray);
+        console.log("New array:", newArray);
+
+    </script>
+</body>
+
+</html>
